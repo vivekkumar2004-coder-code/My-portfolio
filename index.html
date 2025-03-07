@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio Website- Frontend Tutorials</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/ddcf903ec4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container-main">
+  <!-- ----------------header---------------- -->
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="./assets/logo.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-circle-xmark"  onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+
+      <div class="header-text">
+        <p>UI/UX Designer</p>
+        <h1>Hi, I'm <span>Vivek</span> <br> Kashyap From India </h1>
+      </div>
+    </div>
+  </div>
+
+<!--  --------------------about------------------------ -->
+  <div id="about">
+
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="./assets/user.png" class="about-img">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Hello! I'm <span>Vivek Kumar Shaw</span>, a Computer Science and Engineering (CSE) student at Meghnad Saha Institute of Technology, with a passion for frontend development and problem-solving.
+
+            I enjoy creating interactive web experiences and am currently building a web app to support <span>farmers in rural areas by optimizing soil and resource management</span>.
+            
+            I’ve developed management skills through organizing college events and am continuously enhancing my Data Structures and Algorithms (DSA) knowledge.
+            
+            Beyond coding, I love writing stories that celebrate the priceless love of animals, inspired by my bond with my cat.
+            
+            I'm eager to collaborate, learn, and contribute to meaningful projects.
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
+            <p class="tab-links"  onclick="opentab('experience')" >Experience</p>
+            <p class="tab-links"  onclick="opentab('education')" >Education</p>
+          </div>
+
+          <div class="tab-contents active-tab " id="skills">
+            <ul>
+              <li><span>UI/UX</span><br>Designing Web/App Interfaces </li>
+              <li><span>Web Development</span><br>Web app development </li>
+              <li><span>Data Engineering</span><br>Maintaining Data </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2025-Current</span><br>Building websites for users  </li>
+              <li><span>2024-2025</span><br>Freelancer and Content Writer  </li>
+              <li><span>2023-2024</span><br>Started Learning Fullstack /Mern-stack </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2023-2027</span><br>B-Tech At Mehgnad Saha Institute Of Technology </li>
+              <li><span>2022</span><br>Intermediate Of Science at Mother Teresa Academy </li>
+              <li><span>2020</span><br>Matriculation from Jesus And Mary Academy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="viewmarquee">
+      <div class="marquee">
+        <div class="text">
+         <div class="text1"><img src="./assets/html5-svgrepo-com.svg" alt=""></div>
+         <div class="text1"><img src="./assets/css3-02-svgrepo-com.svg" alt=""></div>
+         <div class="text1"><img src="./assets/javascript-svgrepo-com.svg" alt=""></div>
+         <div class="text1"><img src="./assets/nodejs01-svgrepo-com.svg" alt=""></div>
+         <div class="text1"><img src="./assets/mongodb-svgrepo-com.svg" alt=""></div>
+         <div class="text1"><img src="./assets/reactjs-svgrepo-com.svg" alt=""></div>
+         <div class="text1"><img src="./assets/nodejs01-svgrepo-com.svg" alt=""></div>
+        </div>
+        <div class="text">
+         <div class="text1"><img src="./assets/html5-svgrepo-com.svg" alt=""></div>
+         <div class="text1"><img src="./assets/css3-02-svgrepo-com.svg" alt=""></div>
+         <div class="text1"><img src="./assets/javascript-svgrepo-com.svg" alt=""></div>
+         <div class="text1"><img src="./assets/nodejs01-svgrepo-com.svg" alt=""></div>
+         <div class="text1"><img src="./assets/mongodb-svgrepo-com.svg" alt=""></div>
+         <div class="text1"><img src="./assets/reactjs-svgrepo-com.svg" alt=""></div>
+         <div class="text1"><img src="./assets/nodejs01-svgrepo-com.svg" alt=""></div>
+        </div>
+      </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- -----------------services------------------------ -->
+
+  <div id="services">
+
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi facere rem maiores debitis tenetur eaque ipsum autem reprehenderit in dicta.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop"></i>
+          <h2>UI/UX Design</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi facere rem maiores debitis tenetur eaque ipsum autem reprehenderit in dicta.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store-ios"></i>
+          <h2>Power Bi Work</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi facere rem maiores debitis tenetur eaque ipsum autem reprehenderit in dicta.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- .................POrtfolio -->
+
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="./assets/image.png" alt="">
+          <div class="layer">
+            <h3>Car Owning App</h3>
+            <p>The app connects you with the best seller of car near you and provides discount of your choice</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="./assets/HD-wallpaper-car-cars-car-hq-car-thumbnail.jpg" alt="">
+          <div class="layer">
+            <h3>Music App</h3>
+            <p>The app connects you with the best seller of car near you and provides discount of your choice</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="./assets/pexels-christian-9-454702-1164778.jpg" alt="">
+          <div class="layer">
+            <h3>Online Shopping App</h3>
+            <p>The app connects you with the best seller of car near you and provides discount of your choice</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="btn">See More</a>
+    </div>
+
+  </div>
+
+
+  <!--------------------contact------->
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p> <i class="fa-solid fa-paper-plane"></i>vivekkrsahu2004@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i>6289156520</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100023116561454"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://x.com/vivekkumar89319"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href="https://www.instagram.com/vibe_wit_vivek/"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/vivek-kumar-shaw-345704195/"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="./assets/vivek-resume.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>@copyright Vivek. Made with <i class="fa-solid fa-heart"></i> by ProCoder</p>
+    </div>
+  </div>
+</div>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links")
+var tabcontents = document.getElementsByClassName("tab-contents")
+
+function opentab(tabname){
+  for ( tablink of tablinks){
+    tablink.classList.remove("active-link")
+  }
+  for(tabcontent of tabcontents){
+    tabcontent.classList.remove("active-tab")
+  }
+
+  event.currentTarget.classList.add("active-link")
+  document.getElementById(tabname).classList.add("active-tab")
+  
+}
+  </script>
+
+  <script>
+
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+      sidemenu.style.right="0"
+    }
+    
+
+    function closemenu(){
+      sidemenu.style.right="-200px"
+    }
+  </script>
+
+  <script>
+  const scriptURL = "https://script.google.com/macros/s/AKfycbyshWoULiMgtLUVzwmeF59x8wEBEu7m_Fo7VP__ECul3GBy8DGqc7388DWGUXUXXLqZfg/exec"
+  const form = document.forms['submit-to-google-sheet']
+  const msg= document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message Sent Succesfully"
+        setTimeout(function(){
+          msg.innerHTML =""
+        },5000);
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
