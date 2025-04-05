@@ -21,6 +21,7 @@ html {
   margin: auto;
 }
 .container-main #header {
+  padding-top: 80px;
   width: 100%;
   height: 100vh;
   background-image: url("./assets/background.png");
@@ -31,10 +32,22 @@ html {
   padding: 10px 8%;
 }
 .container-main #header .container nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  z-index: 1000;
+  transition: top 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+.container-main #header .container nav.hidden {
+  top: -200px;
 }
 .container-main #header .container nav .fa-bars,
 .container-main #header .container nav .fa-circle-xmark {
