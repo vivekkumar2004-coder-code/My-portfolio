@@ -500,4 +500,20 @@ html {
   .container-main .copyright p {
     font-size: 14px;
   }
+}
+#main-body {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(17, 17, 17, 0.0666666667);
+}
+
+.cursor {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(199, 153, 187);
+  border-radius: 50%;
+  transition: all linear 0.2s;
 }/*# sourceMappingURL=style.css.map */
